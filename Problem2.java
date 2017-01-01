@@ -19,9 +19,9 @@ algorithm  allows the fast computation of large positive integer powers by reduc
 of multiplications needed to achieve the final solution.
 The algorithm can be easily described by the following piecewise function:
 
-	|(x)(x^2)^((n-1)/2) if n is odd.
-x^n =	|
-	|(x)^(2)^(n/2)  	if n is even.
+	  |(x)(x^2)^((n-1)/2) if n is odd.
+x^n = |
+	  |(x)^(2)^(n/2)  	if n is even.
 This allows the rapid exponentiation of the fibonacci matrix, reducing and setting the number of 
 needed multiplications logarithmically. A brief analysis shows that the time complexity 
 of the algorithm that implements exponentiation by squaring to be O(log(n)).
